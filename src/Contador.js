@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function Contador({valor}) {
+function Contador({valor, numero}) {
 
     const [conteo, setConteo] = useState(valor);
 
@@ -18,7 +18,7 @@ function Contador({valor}) {
     
     return (
         <>
-        <h1>Contador</h1> 
+        <h1>Contador {numero}</h1> 
         <h2>{conteo}</h2>
         <button onClick={handleIncrease}>+</button>
         <button onClick={handleReset}>Reset</button>
